@@ -2,125 +2,221 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="node_modules/normalize.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <title>Static-Comp-3</title>
   </head>
   <body>
-    <section id="sidebar">
-      <img id="profile-pic" src="" alt="a head in a circle">
-      <h3>Namey namerson</h3>
-      <hr>
-      <h4>MAIN</h4>
-      <ul>
-        <li>HOME</li>
-        <li>JOB</li>
-        <li>RESUME</li>
-        <li>TASK</li>
-        <li>CALANDER</li>
-      </ul>
-      <hr>
-      <h4>ADMIN</h4>
-      <ul>
-        <li>USERS</li>
-        <li>LOCATIONS</li>
-        <li>WORKFLOWS</li>
-        <li>JOB BOARDS</li>
-        <li>SOCIAL</li>
-      </ul>
-      <hr>
-      <h4>CATAGORIES</h4>
-      <ul>
-        <li>ADMINISTRATIVE</li>
-        <li>DESIGN</li>
-        <li>EXECUTIVE</li>
-        <li>HUMAN RESOURCE</li>
-      </ul>
-    </section>
-    <section id="primary-content">
-      <header>
-        <section id="top-bar">
-          <div class="top-bar-option" id="#hamburger">
-            <img class="top-bar-icon" src="images/icons/bars.svg" alt="menu">
-          </div>
-          <div class="top-bar-option" id="#magnifying-glass"><img class="top-bar-icon" src="images/icons/search.svg" alt="search icon">
-          </div>
-          <input type="text" name="search" placeholder="Search" id="search"></input>
-          <div class="top-bar-option" id="#person-icon">
-            <img class="top-bar-icon" src="images/icons/user.svg" alt="search icon">
-          </div>
-          <div class="top-bar-option" id="#book-thing">
-            <img class="top-bar-icon" src="images/icons/calendar.svg" alt="search icon">
-          </div>
-          <div class="top-bar-option" id="#calendar">
-            <img class="top-bar-icon" src="images/icons/settings.svg" alt="search icon">
-          </div>
-        </section>
-        <section id="middle-bar">
-          <span id="middle-bar-left">
-            <h1>Customer Service Representative</h1>
-              <span id="middle-bar-left-subtext">
-                <img id="location-pin" src="images/icons/placeholder.svg" alt="location pin">
-                <p id="location-text">Nunya - </p>
-                <a id="middle-bar-left-preview" href="">Preview this post</a>
-              </span>
-          </span>
-          <span id="middle-bar-right">
-            <div id="middle-bar-right-open"><div id="middle-right-dot"></div><p id="middle-right-text">Open</p></div>
-              <img class="middle-bar-right-icon" src="images/icons/computer.svg" alt="search icon">
-              <img class="middle-bar-right-icon" src="images/icons/network.svg" alt="search icon">
-              <img class="middle-bar-right-icon" src="images/icons/route.svg" alt="search icon">
-          </span>
-        </section>
-        <nav>
-          <div class="nav-option">Summary</div>
-          <div class="nav-option">Applicants</div>
-          <div class="nav-option">Job Board</div>
-          <div class="nav-option">Interview</div>
-          <div class="nav-option">Activity</div>
-          <div class="nav-option">Broadcast</div>
-          <div class="nav-option">Notifications</div>
-        </nav>
-      </header>
-      <main>
-        <section id="top-main">
-          <section id="top-main-graphics">
-              <div class="circle1">
-                <div class="circle1-skeleton"></div>
-                <div class="circle1-fill"></div>
-              </div>
-              <div class="circle2">
-                <div class="circle2-skeleton"></div>
-                <div class="circle2-fill"></div>
-              </div>
-              <div class="circle3">
-                <div class="circle3-skeleton"></div>
-                <div class="circle3-fill"></div>
-              </div>
-              <div id="graph"></div>
+    <div id="page-wrapper">
+      <section id="sidebar">
+        <div id="profile-pic" alt="a head in a circle"></div>
+        <h2>Namey Namerson</h2>
+        <hr class="sidebar-break">
+        <h3>MAIN</h3>
+        <ul>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/agenda.svg">HOME</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/animal.svg">JOB</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/bathroom.svg">RESUME</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/business.svg">TASK</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/cleaning.svg">CALENDAR</li>
+        </ul>
+        <hr class="sidebar-break">
+        <h3>ADMIN</h3>
+        <ul>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/direction.svg">USERS</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/luxury.svg">LOCATIONS</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/message.svg">WORKFLOWS</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/security.svg">JOB BOARDS</li>
+          <li class="sidebar-top-icons"><img class="sidebar-icon" src="images/icons/suitcase.svg">SOCIAL</li>
+        </ul>
+        <hr class="sidebar-break">
+        <h3>CATAGORIES</h3>
+        <ul>
+          <li class="sidebar-bottom-icons"><input type="checkbox">Administrative</li>
+          <li class="sidebar-bottom-icons"><input type="checkbox">Design</li>
+          <li class="sidebar-bottom-icons"><input type="checkbox">Executive</li>
+          <li class="sidebar-bottom-icons"><input type="checkbox">Human Resources</li>
+        </ul>
+      </section>
+      <section id="primary-content">
+        <header>
+          <section id="top-bar">
+            <div class="top-bar-right" id="#hamburger">
+              <img class="top-bar-icon" src="images/icons/bars.svg" alt="menu">
+            </div>
+            <div class="top-bar-left" id="#magnifying-glass"><img class="top-bar-icon" src="images/icons/search.svg" alt="search icon">
+            </div>
+            <input type="text" name="search" placeholder="Search" id="search"></input>
+            <div class="top-bar-right" id="#person-icon">
+              <img class="top-bar-icon" src="images/icons/user.svg" alt="search icon">
+            </div>
+            <div class="top-bar-right" id="#book-thing">
+              <img class="top-bar-icon" src="images/icons/calendar.svg" alt="search icon">
+            </div>
+            <div class="top-bar-right" id="#calendar">
+              <img class="top-bar-icon" src="images/icons/settings.svg" alt="search icon">
+            </div>
           </section>
-          <section id="top-main-text">
-            <section id="circles-text">
-              blah
+          <section id="middle-bar">
+            <span id="middle-bar-left">
+              <h1>Customer Service Representative</h1>
+                <span id="middle-bar-left-subtext">
+                  <img id="location-pin" src="images/icons/placeholder.svg" alt="location pin">
+                  <p id="location-text">Nunya - </p>
+                  <a id="middle-bar-left-preview" href="">Preview this post</a>
+                </span>
+            </span>
+            <span id="middle-bar-right">
+              <div id="middle-bar-right-open">
+                <div id="middle-right-dot"></div>
+                <p id="middle-right-text">Open</p>
+              </div>
+                <img class="middle-bar-right-icon" src="images/icons/computer.svg" alt="search icon">
+                <img class="middle-bar-right-icon" src="images/icons/network.svg" alt="search icon">
+                <img class="middle-bar-right-icon" src="images/icons/route.svg" alt="search icon">
+            </span>
+          </section>
+          <nav>
+            <div class="nav-option">Summary</div>
+            <div class="nav-option">Applicants</div>
+            <div class="nav-option">Job Board</div>
+            <div class="nav-option">Interview</div>
+            <div class="nav-option">Activity</div>
+            <div class="nav-option">Broadcast</div>
+            <div class="nav-option">Notifications</div>
+          </nav>
+        </header>
+        <main>
+          <section id="top-main">
+            <section id="top-main-graphics">
+              <section id="circle-graphics">
+                <div class="circle1">
+                  <h5>1ST</h5>
+                  <h6>Circle</h5>
+                  <div class="circle1-skeleton"></div>
+                  <div class="circle1-fill"></div>
+                </div>
+                <div class="circle2">
+                  <h5>2ND</h5>
+                  <h6>Circle</h5>
+                  <div class="circle2-skeleton"></div>
+                  <div class="circle2-fill"></div>
+                </div>
+                <div class="circle3">
+                  <h5>3RD</h5>
+                  <h6>Circle</h5>
+                  <div class="circle3-skeleton"></div>
+                  <div class="circle3-fill"></div>
+                </div>
+              </section>
+              <section class="top-main-button circles-text">
+                Total • Out of Three Circles
+              </section>
             </section>
-            <section id="graph-text">
-              blech
+            <section id="top-main-text">
+              <div id="graph">
+                <img id="graph-img" src="images/graph.png" alt="random graph">
+              </div>
+              <section class="top-main-button graph-text">
+                Number of Informative Pictures: 1</section>
             </section>
           </section>
-        </section>
-        <section id="main-page-break">
-          <hr>
-          <p>O</p>
-          <hr>
-        </section>
-        <section id="bottom-main">
-          <section id="bottom-main-left">
+          <section id="main-page-break">
+            <hr class="main-breaks">
+            <img class="page-break-icon" src="images/icons/arrows.svg">
+            <hr class="main-breaks">
           </section>
-          <section id="bottom-main-right">
+          <section id="bottom-main">
+            <section id="bottom-main-left">
+              <section id="bottom-main-left-header">
+                <p class="bottom-main-left-text">Job Description</p>
+                <div class="edit-button">
+                  <img id="edit-button-icon" src="images/icons/draw.svg" alt="location pin">EDIT</div>
+              </section>
+              <table id="synopsis">
+                <tr>
+                  <td class="bottom-main-right-bold">Position Title:</td>
+                  <td class="bottom-main-right-info">Customer Service Representative</td>
+                </tr>
+                <tr>
+                  <td class="bottom-main-right-bold">Location:</td>
+                  <td class="bottom-main-right-info">Nunya, California</td>
+                </tr>
+                <tr>
+                  <td class="bottom-main-right-bold">Employment Type:</td>
+                  <td class="bottom-main-right-info">Full-time</td>
+                </tr>
+                <tr>
+                  <td class="bottom-main-right-bold">Status:</td>
+                  <td class="bottom-main-right-info">Open</td>
+                </tr>
+                <tr>
+                  <td class="bottom-main-right-bold">Description:</td>
+                  <td class="bottom-main-right-info">The Customer Service Representative is a thankless and sacrificial position. People used to hate us. That's your problem now. Don't worry though, we'll pay you poorly for your time. Godspeed.</td>
+                </tr>
+                <tr>
+                  <td class="bottom-main-right-bold">Hiring Lead:</td>
+                  <td class="bottom-main-right-info">Your personal moral conviction.</td>
+                </tr>
+                <tr>
+                  <td class="bottom-main-right-bold">Approved Salary:</td>
+                  <td class="bottom-main-right-info">All the plunder you can carry</td>
+                </tr>
+              </table>
+            </section>
+            <section id="bottom-main-right">
+              <section class="social-button facebook">
+                <img class="social-network-logo" src="images/icons/facebook.svg" alt="facebook logo">
+                Post on Facebook
+              </section>
+              <section class="social-button twitter">
+                <img class="social-network-logo" src="images/icons/twitter.svg" alt="twitter logo">
+                Tweet this Job
+              </section>
+              <section class="social-button linkedin">
+                <img class="social-network-logo" src="images/icons/linkedin.svg" alt="linkedin logo">
+                Post to Linkedin
+              </section>
+              <section class="bottom-left-blurb">
+                <img src="images/icons/hands.svg" class="bottom-left-icon" alt="hands shaking">
+                Link to this Job
+              </section>
+              <section class="bottom-left-blurb-detail">
+                Go ahead, link to this. Try it. It'll totally get you hired.
+              </section>
+              <section class="bottom-left-blurb-input">
+                <input class="btl-input" type="text" placeholder="http://awesome.sauce">
+                <div class="btl-input-copy">Copy</div>
+              </section>
+              <section class="bottom-left-blurb">
+                <img src="images/icons/speech-bubble.svg" class="bottom-left-icon" alt="speech bubble">
+                Use the Button Widget
+              </section>
+              <section class="bottom-left-blurb-detail">
+                Go ahead, link to this. Try it. It'll totally get you hired.
+              </section>
+              <section class="bottom-left-blurb-input">
+                <input class="btl-input" type="text" placeholder="http://awesome.sauce">
+                <div class="btl-input-copy">Copy</div>
+              </section>
+              <section class="bottom-left-blurb">
+                <img src="images/icons/wrench.svg" class="bottom-left-icon" alt="wrench">
+                Upload Resumes by Email
+              </section>
+              <section class="bottom-left-blurb-detail">
+                Go ahead, link to this. Try it. It'll totally get you hired.
+              </section>
+              <section class="bottom-left-blurb-input">
+                <input class="btl-input" type="text" placeholder="http://awesome.sauce">
+                <div class="btl-input-copy">Copy</div>
+              </section>
+            </section>
           </section>
-        </section>
-      </main>
-    </section>
+        </main>
+      </section>
+    </div>
   </body>
 </html>
