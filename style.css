@@ -49,7 +49,6 @@ ul {
 }
 
 .sidebar-top-icons, .sidebar-bottom-icons {
-  /*border: 1px solid #999999;*/
   margin: 0 auto;
   padding: 10px 0 10px 15px;
   font-size: 12px;
@@ -366,8 +365,12 @@ h6 {
   justify-content: center;
 }
 
+#graph {
+  text-align: center;
+}
+
 #graph-img {
-  width: 100%;
+  width: 70%;
 }
 
 .circles-text {
@@ -580,9 +583,13 @@ h6 {
     display: none;
   }
 
+  #graph {
+    text-align: center;
+  }
+
   #graph-img {
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 10px;
+    width: 80%;
   }
 
   #bottom-main-left {
@@ -656,6 +663,7 @@ h6 {
 
   #bottom-main {
     flex-direction: column;
+    margin-top: 20px;
     height: 1400px;
   }
 
@@ -720,6 +728,10 @@ h6 {
     left: 50%;
   }
 
+  #graph {
+    margin-top: 20px;
+  }
+
   .top-main-button {
     text-align: center;
   }
@@ -727,5 +739,4 @@ h6 {
   #bottom-main {
     height: 1600px;
   }
-
 }
